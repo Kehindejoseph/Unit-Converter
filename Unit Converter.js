@@ -4,17 +4,16 @@
 1 kilogram = 2.204 pound
 */ 
 
-// document.getElementById("box").textContent = boxEl
+
 let convertEl =document.getElementById("convert-btn")
 let lengthEl = document.getElementById("length-btn")
 let volumeEl = document.getElementById("volume-btn")
 let massEl = document.getElementById("mass-btn")
 
-// boxEl.innerHTML = `<h3 onclick='convert()'></h3>`
-
-// function convert() {
-//     boxEl.textContent += "<p>Thank you</p>"
-// }
+const convert = function convert() {
+    const convertValue = document.getElementById("box").value
+    length(convertValue)
+}
 
 
 function length(valNum) {
@@ -51,7 +50,3 @@ function length(valNum) {
     
 }
 
-
-// convertEl.addEventListener("click", length() {
-    
-// } )
